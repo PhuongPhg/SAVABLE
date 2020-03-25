@@ -1,4 +1,5 @@
 # SAVABLE
 
-SRS: shorturl.at/nprDN
-SDD: shorturl.at/oqW04
+*SRS: shorturl.at/nprDN
+
+*SDD: shorturl.at/oqW04
