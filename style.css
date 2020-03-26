@@ -46,6 +46,9 @@ body {
   max-width: 1000px;
   margin: 0 auto;
 }
+.container p{
+  text-align: center;
+}
 #footer{
   background-color: #2f2f2f;
   padding: 25px 0;
