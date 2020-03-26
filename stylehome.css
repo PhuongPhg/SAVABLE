@@ -5,15 +5,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 #header{
-  background-color: #DDE5E7;
+  background-color: white;
   height: 100px;
   line-height: 100px; /*make the line "o giua"*/
 }
+
 #header a{
-  color: #2d132c;
+  color: #CC8C64;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  vertical-align: top;
+}
+#header a:hover{
+  color: #6E3D38;
 }
 #header-title{
   display: block;
@@ -21,20 +26,46 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-#header-nav {
+#header-nav{
   display: block;
   float: right;
 }
-#header li{
+#header-nav li{
   display: inline;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 0;
-  color: white;
-}
-#header-nav a:hover{
-  color: #717079;
+  background-color: #ECEDEE;
+  border-radius: 15px;
+  font-weight: bold;
 }
 .container{
   max-width: 1000px;
   margin: 0 auto;
+}
+#footer{
+  background-color: #2f2f2f;
+  padding: 25px 0;
+}
+.column{
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+#footer h4{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer p{
+  color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #CC8C64;
 }
