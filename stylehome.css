@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+body {
+  color: #555;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+#header{
+  background-color: #DDE5E7;
+  height: 100px;
+  line-height: 100px; /*make the line "o giua"*/
+}
+#header a{
+  color: #2d132c;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#header-title{
+  display: block;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+#header-nav {
+  display: block;
+  float: right;
+}
+#header li{
+  display: inline;
+  padding-left: 20px;
+  margin-top: 0;
+  color: white;
+}
+#header-nav a:hover{
+  color: #717079;
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
