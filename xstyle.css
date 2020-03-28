@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+body {
+  color: #555;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+#header{
+  background-color: white;
+  height: 100px;
+  line-height: 100px;
+}
+
+#header a{
+  color: #CC8C64;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  vertical-align: top;
+}
+#header a:hover{
+  color: #6E3D38;
+}
+
+#header-title{
+  display: block;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+#header-nav{
+  display: block;
+  float: right;
+}
+#header-nav li{
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  background-color: #ECEDEE;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#content{
+	display: block;
+	margin-top: 100px;
+	margin-left: auto;	
+	margin-right: auto;	
+	width: 	1000px;
+}
+
+#login{
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	color: black;
+}
+
+#input-string{
+	text-align: center;
+	margin: auto;
+	font-size: 24px;
+	background-color: white;
+}
+
+input[type=text]{
+	height: 58px;
+	width: 401px;
+	margin-bottom: 9px;
+	border: 4px solid #3A3A3A;
+	border-radius: 23px;
+	outline: none;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+input[type=password]{
+	height: 58px;
+	width: 401px;
+	margin-top: 9px;
+	border: 4px solid #3A3A3A;
+	border-radius: 23px;
+	outline: none;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+input[type="image"] {
+    margin-top: 10px;
+    width: 69px; 
+    height: 69px; 
+    border: 0;
+}
+
+::placeholder{
+	color: #3A3A3A;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+#footer{
+	
+	width: 1000px;
+	height: 200px;
+	background-color: gray;
+}
+
+#footer{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  background-color: white;
+  padding: 25px 0;
+}
+
+#content img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 152px;
+    height: 152px;
+}
+
+#help{
+	margin-top: 200px;
+	float: left;
+}
+
+#go{
+	margin-top: 200px;
+	float: right;
+}
+
+#help2{
+	margin-top: 65px;
+	float: left;
+}
+
+#go2{
+	margin-top: 65px;
+	float: right;
+}
