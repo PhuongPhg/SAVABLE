@@ -29,20 +29,22 @@
     </div>
 
     <div id="input-string">
-      <form id="inputform" method="get" action="">
+      <form id="inputform" method="POST" action="save.php">
         <div id="username">
-        	<input type="text" id="username" placeholder="Username" name="username">
+          <input type="text" id="username" placeholder="Username" name="user-name">
         </div>
         <div id="password">
-        	<input type="text" id="name" placeholder="Name" name="name ">
+          <input type="text" id="name" placeholder="Name" name="name">
         </div>
         <div id="email">
-        	<input type="text" id="email" placeholder="Email" name="email">
+          <input type="text" id="email" placeholder="Email" name="email">
         </div>
         <div id="password">
-        	<input type="password" id="password" placeholder=Password name="password">
+          <input type="password" id="password" placeholder="Password" name="pass-word">
         </div>
-        
+        <div id="go2">
+      <button type ="submit">Create</button>
+    </div>
       </form>
     </div>
   </div>
@@ -51,9 +53,7 @@
     <div id="help2">
       <a href="https://www.google.com"><img src="icons/help.svg" width="69px"></a> <!--さがそう！グーグル -->
     </div>
-    <div id="go2">
-      <input type="image" src="icons/go.svg">
-    </div>
+    
   </div>
 
 </body>
