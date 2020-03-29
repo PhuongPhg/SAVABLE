@@ -3,7 +3,15 @@
 <head>
   <title>Log In SAVABLE</title>
   <link rel="stylesheet" type="text/css" href="xstyle.css">
-  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style type="text/css">
+      /*Rules for sizing the icon*/
+      .material-icons.md-18 { font-size: 18px; }
+      .material-icons.md-24 { font-size: 24px; }
+      .material-icons.md-36 { font-size: 36px; }
+      .material-icons.md-48 { font-size: 48px; }
+    </style>
 </head>
 
 <body>
@@ -36,18 +44,27 @@
         <div id="password">
         <input type="password" id="password" placeholder="Password" name="password ">
         </div>
-        
-      </form>
+
+
     </div>
   </div>
 
   <div id="footer">
-    <div id="help">
-      <a href="https://www.google.com"><img src="icons/help.svg" width="69px"></a> <!--さがそう！グーグル -->
-    </div>
     <div id="go">
-      <input type="image" src="icons/go.svg">
+      <button type="submit" name="button"><i class="material-icons md-48">play_circle_filled</i></button>
     </div>
+      </form>
+    <div id="help">
+
+      <a href=""><div class="icon-help">
+        <i class="material-icons md-48">help_outline</i>
+      </div>
+      <div class="help-detail">
+        <p>Forgot password?</p>
+      </div></a>
+    </div>
+
+
   </div>
 
 </body>

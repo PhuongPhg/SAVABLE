@@ -1,6 +1,6 @@
 <?php
 $username = "id13053030_trialsavable"; // Khai báo username
-$password = "**********";      // Khai báo password
+$password = "1032010320";      // Khai báo password
 $server   = "localhost";   // Khai báo server
 $dbname   = "id13053030_trialsavable";      // Khai báo database
 
@@ -31,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     VALUES ('$name', '$usernamee', '$email', '$passwordd')";
 
     if ($connect->query($sql) === TRUE) {
-        echo "Success";
+        echo "";
     } else {
         echo "Error: " . $sql . "<br>" . $connect->error;
     }
 
 //Đóng database
 $connect->close();
-require("contact.html");
+require("welcome.php");
 ?>

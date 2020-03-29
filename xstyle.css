@@ -52,8 +52,8 @@ body {
 #content{
 	display: block;
 	margin-top: 100px;
-	margin-left: auto;	
-	margin-right: auto;	
+	margin-left: auto;
+	margin-right: auto;
 	width: 	1000px;
 }
 
@@ -95,8 +95,8 @@ input[type=password]{
 
 input[type="image"] {
     margin-top: 10px;
-    width: 69px; 
-    height: 69px; 
+    width: 69px;
+    height: 69px;
     border: 0;
 }
 
@@ -106,9 +106,16 @@ input[type="image"] {
 	text-align: center;
 	padding-top: 100px;
 }
+#content img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 152px;
+    height: 152px;
+}
 
 #footer{
-	
+
 	width: 1000px;
 	height: 200px;
 	background-color: gray;
@@ -120,24 +127,53 @@ input[type="image"] {
   max-width: 1000px;
   background-color: white;
   padding: 25px 0;
-}
-
-#content img{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 152px;
-    height: 152px;
+  vertical-align: top;
 }
 
 #help{
 	margin-top: 200px;
-	float: left;
+  float: left;
+  text-decoration: none;
 }
-
+#help i{
+  float: left;
+  color: #3A3A3A;
+  position: absolute;
+  vertical-align: top;
+}
+#help p{
+  float: left;
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  transition: transform 0.8s;
+  opacity: 0;
+  left: 230px;
+  bottom: auto;
+  transition: background-color 1s;
+  color: white;
+}
+#help p:hover{
+  opacity: 1;
+  background-color: #3A3A3A;
+  border-radius: 20px;
+  transform: translate(75px, -5px);
+}
+#help:hover{
+  opacity: 1;
+}
 #go{
 	margin-top: 200px;
 	float: right;
+
+}
+#go button{
+  border-radius: 50%;
+  width:26px;
+  height:26px;
+  text-decoration: none;
+  position: absolute;
+  float: right;
+  border: none;
 }
 
 #help2{
