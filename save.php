@@ -1,17 +1,6 @@
 <?php
-$username = "id13053030_trialsavable"; // Khai báo username
-$password = "1032010320";      // Khai báo password
-$server   = "localhost";   // Khai báo server
-$dbname   = "id13053030_trialsavable";      // Khai báo database
 
-// Kết nối database tintuc
-$connect = new mysqli($server, $username, $password, $dbname);
-
-//Nếu kết nối bị lỗi thì xuất báo lỗi và thoát.
-if ($connect->connect_error) {
-    die("Không kết nối :" . $conn->connect_error);
-    exit();
-}
+include "connection.php";
 
 //Khai báo giá trị ban đầu, nếu không có thì khi chưa submit câu lệnh insert sẽ báo lỗi
 $name = "";
@@ -22,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST["name"])) { $name = $_POST['name']; }
     if(isset($_POST["user-name"])) { $usernamee = $_POST['user-name']; }
     if(isset($_POST["email"])) { $email = $_POST['email']; }
-    if(isset($_POST["pass-word"])) { $password = $_POST['pass-word']; }
+    if(isset($_POST["pass-word"])) { $passwordd = $_POST['pass-word']; }
 }
 
 
@@ -37,6 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 //Đóng database
-$connect->close();
+include "disconnection.php";
 require("welcome.php");
 ?>
