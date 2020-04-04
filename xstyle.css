@@ -176,12 +176,17 @@ input[type="image"] {
   border: none;
 }
 
-#help2{
-	margin-top: 65px;
-	float: left;
-}
-
 #go2{
-	margin-top: 65px;
-	float: right;
+  margin-top: 100px;
+  float: right;
+
+}
+#go2 button{
+  border-radius: 50%;
+  width:26px;
+  height:26px;
+  text-decoration: none;
+  position: absolute;
+  float: right;
+  border: none;
 }

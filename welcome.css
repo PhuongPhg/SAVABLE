@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+body {
+  color: #555;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+#header{
+  background-color: white;
+  height: 100px;
+  line-height: 100px; /*make the line "o giua"*/
+}
+
+#header a{
+  color: #CC8C64;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  vertical-align: top;
+}
+#header a:hover{
+  color: #6E3D38;
+}
+#header-title{
+  display: block;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+#header-nav{
+  display: block;
+  float: right;
+}
+#header-nav li{
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  background-color: #ECEDEE;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#footer{
+  background-color: white;
+  padding: 25px 0;
+}
+.column{
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+#footer h4{
+  color: #2f2f2f;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer p{
+  color: #2f2f2f;
+}
+a{
+  color: #2f2f2f;
+  text-decoration: none;
+}
+a:hover{
+  color: #CC8C64;
+}
+#content{
+  background-color: white;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #d4674c 0%, #E9EBF0 100%);
+  background: linear-gradient(45deg, #d4674c 0%,#E9EBF0 100%);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left;
+}
+
+.hovereffect img {
+  transform: rotate(180deg);
+  display: block;
+  position: relative;
+  max-width: none;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+   filter: brightness(50%);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 57px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left;
+}
+.hovereffect a{
+  font-size: 33px;
+  color: white;
+}
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
