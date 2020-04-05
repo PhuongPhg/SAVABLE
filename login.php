@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $passwordd="";
   if(isset($_POST["user-name"])) {
     $usernamee=$_POST["user-name"];
-    $email=$_POST["email"];
   }
   if(isset($_POST["pass-word"])) { $passwordd=$_POST["pass-word"];}
 }
@@ -20,9 +19,9 @@ if($usernamee=="" || $passwordd=="") {
   exit;
 }
 //Kiểm tra tên đăng nhập có tồn tại không
-$sql=("SELECT username, password FROM UserAccount WHERE username='$usernamee'");
+$sql=("SELECT username, name, password FROM UserAccount WHERE username='$usernamee'");
 $kt=mysqli_query($connect, $sql);
-if (mysql_num_rows($kt) == 0) {
+if (mysqli_num_rows($kt) == 0) {
 echo "This username does not exist. Check it again! <a href='javascript: history.go(-1)'>Return</a>";
 exit;
 }
@@ -35,8 +34,8 @@ exit;
 }
 
 //Lưu tên đăng nhập
-$_SESSION['username'] = $usernamee;
-echo "Welcome back <b>" .$usernamee . "</b>. Success login! <a href=''>Log out</a>";
+$_SESSION['name'] = $row['name'];
+require ("welcomeback.php");
 die();
-}
+
 ?>

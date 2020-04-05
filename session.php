@@ -1,5 +1,5 @@
 <?php session_start();
-if (isset($_SESSION['username'])){
-  unset($_SESSION['username']); // xóa session login
+if (isset($_SESSION['name'])){
+  unset($_SESSION['name']); // xóa session login
 }
 ?>
