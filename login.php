@@ -35,7 +35,8 @@ exit;
 
 //Lưu tên đăng nhập
 $_SESSION['name'] = $row['name'];
-require ("welcomeback.php");
+$_SESSION['username']=$_POST['user-name'];
+require ("index.php");
 die();
 
 ?>
