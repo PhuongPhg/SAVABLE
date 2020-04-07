@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+body {
+  color: #555;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+#header{
+  background-color: white;
+  height: 100px;
+  line-height: 100px; /*make the line "o giua"*/
+}
+
+#header a{
+  color: #CC8C64;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  vertical-align: top;
+}
+#header a:hover{
+  color: #6E3D38;
+}
+#header-title{
+  display: block;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+}
+#header-nav{
+  display: block;
+  float: right;
+}
+#header-nav li{
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  background-color: #ECEDEE;
+  border-radius: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}#footer{
+  background-color: #2f2f2f;
+  padding: 25px 0;
+}
+.column{
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+#footer h4{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer p{
+  color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #CC8C64;
+}
+table{
+  width: 50%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+tr{
+  border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+  border: none;
+  height: 30px;
+  padding: 2px;
+}
+tr:hover{
+  background: #F5F5F5;
+}
+form{
+  width: 45%;
+  margin: 50px auto;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+}
+.input-group{
+  margin: 10px 0 10px 0;
+}
+.input-group label{
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input{
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5F9EA0;
+    border: none;
+    border-radius: 5px;
+}
+}
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #2E8B57;
+    color: white;
+    border-radius: 3px;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #800000;
+}
