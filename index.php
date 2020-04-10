@@ -1,13 +1,11 @@
-<?php include("connection.php");
-include("savedata.php");
-	$user=$_SESSION['username'];
-	$namee="";
-?>
 <?php
+	include("savedata.php");
+	$user=$_SESSION['username'];
+
 	if (isset($_GET['edit'])) {
 		$id = $_GET['edit'];
 		$update = true;
-		$record = mysqli_query($connect, "SELECT name, achieve, budget FROM wishlist WHERE id=$id AND 
+		$record = mysqli_query($connect, "SELECT id, name, achieve, budget FROM wishlist WHERE id=$id AND
 		username='$user' ");
 
 		if (count($record) == 1 ) {
@@ -15,6 +13,7 @@ include("savedata.php");
 			$namee = $n['name'];
 			$achieve=$n['achieve'];
 			$budget=$n['budget'];
+			$id=$n['id'];
 		}
 	}
 ?>
@@ -61,7 +60,7 @@ include("savedata.php");
 						<a href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn">Edit</a>
 					</td>
 					<td>
-						<a href="server.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
+						<a href="delete.php?id=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
 					</td>
 				</tr>
 				<?php } ?>
