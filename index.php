@@ -40,7 +40,7 @@
 
 	<div id="content">
 
-		<?php $results=mysqli_query($connect, "SELECT name, achieve, budget FROM wishlist WHERE username='$user'");?>
+		<?php $results=mysqli_query($connect, "SELECT * FROM wishlist WHERE username='$user'");?>
 
 		<table>
 			<thead>

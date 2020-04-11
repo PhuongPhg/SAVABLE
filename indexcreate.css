@@ -10,16 +10,7 @@ body {
   line-height: 100px; /*make the line "o giua"*/
 }
 
-#header a{
-  color: #CC8C64;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  vertical-align: top;
-}
-#header a:hover{
-  color: #6E3D38;
-}
+
 #header-title{
   display: block;
   float: left;
@@ -62,13 +53,7 @@ body {
 #footer p{
   color: white;
 }
-a{
-  color: white;
-  text-decoration: none;
-}
-a:hover{
-  color: #CC8C64;
-}
+
 table{
   width: 50%;
   margin: 30px auto;
@@ -110,6 +95,15 @@ form{
   border-radius: 5px;
   border: 1px solid gray;
 }
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #6E3D38;
+}
+
 .btn {
     padding: 10px;
     font-size: 15px;
@@ -118,19 +112,4 @@ form{
     border: none;
     border-radius: 5px;
 }
-}
-.edit_btn {
-    text-decoration: none;
-    padding: 2px 5px;
-    background: #2E8B57;
-    color: white;
-    border-radius: 3px;
-}
 
-.del_btn {
-    text-decoration: none;
-    padding: 2px 5px;
-    color: white;
-    border-radius: 3px;
-    background: #800000;
-}
