@@ -30,8 +30,8 @@
 			<a id ="header-title" href="#" style="color: #6E3D38;">SAVABLE</a>
 			<ul id="header-nav">
 				<li>Home</li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="about.php">About</a></li>
+				<li><a href="contact.php">Contact</a></li>
 				<li>Hi <?php echo $_SESSION["name"] ?></li>
 				<li><a href="logout.php">Log out</a></li>
 			</ul>
