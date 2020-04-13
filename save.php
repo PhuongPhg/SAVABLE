@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include "connection.php";
 
 //Khai báo giá trị ban đầu, nếu không có thì khi chưa submit câu lệnh insert sẽ báo lỗi
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $kt=mysqli_query($connect, $sql);
 
       if(mysqli_num_rows($kt)>0) {
-        echo "This email username already exist!";
+        echo "This email username already exist! <a href='javascript: history.go(-1)'>Return</a>";
       }
       else {
     //Code xử lý, insert dữ liệu vào table
@@ -38,6 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 }
+$_SESSION['name'] = $name;
+$_SESSION['username']=$usernamee;
 //Đóng database
 include "disconnection.php";
  if ($check==1){ require("welcome.php");}
