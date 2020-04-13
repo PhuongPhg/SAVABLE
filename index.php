@@ -8,13 +8,11 @@
 		$record = mysqli_query($connect, "SELECT id, name, achieve, budget FROM wishlist WHERE id=$id AND
 		username='$user' ");
 
-		if (count($record) == 1 ) {
 			$n = mysqli_fetch_array($record);
 			$namee = $n['name'];
 			$achieve=$n['achieve'];
 			$budget=$n['budget'];
 			$id=$n['id'];
-		}
 	}
 ?>
 
@@ -57,7 +55,7 @@
 					<td><?php echo $row['achieve']; ?></td>
 					<td><?php echo $row['budget']; ?></td>
 					<td>
-						<a href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn">Edit</a>
+						<a href="index.php?edit=<?php echo $row['id']; ?>" class="del_btn">Edit</a>
 					</td>
 					<td>
 						<a href="delete.php?id=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
@@ -96,7 +94,7 @@
 		<div class="container">
 			<div class="column">
 				<h4>Contact information</h4>
-				<p><a href="#">Pham Minh Long</a></p>
+				<p><a href="https://github.com/s0ys4uc3">Pham Minh Long</a></p>
 				<p><a href="https://github.com/PhuongPhg">Trinh Thao Phuong</a></p>
 			</div>
 			<div class="column">
