@@ -24,8 +24,8 @@ $_SESSION['name']=$_POST['name']
       <a id ="header-title" href="index.html" style="color: #6E3D38;">SAVABLE</a>
       <ul id="header-nav">
         <li><a href="">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
         <li>Hi <?php echo $_SESSION['name'] ?></li>
         <li><a href="logout.php">Log out</a></li>
       </ul>
