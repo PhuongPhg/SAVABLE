@@ -13,7 +13,7 @@
 			$achieve=$n['achieve'];
 			$budget=$n['budget'];
 			$id=$n['id'];
-	}
+		}
 ?>
 
 <!DOCTYPE html>
@@ -37,25 +37,30 @@
 	</div>
 
 	<div id="content">
-
+	    <div class="container">
 		<?php $results=mysqli_query($connect, "SELECT * FROM wishlist WHERE username='$user'");?>
 
-		<table>
+		<table align="center" class="center-table" style="width: 80%">
 			<thead>
 					<tr>
 						<th>Name</th>
-						<th>Goal</th>
 						<th>Achieve</th>
-						<th colspan="3">Action</th>
+						<th>Goal</th>
+						<th>Process</th>
+						<th colspan="2">Action</th>
 					</tr>
 			</thead>
-			<?php while ($row=mysqli_fetch_array($results, MYSQLI_ASSOC)) { ?>
+			<?php while ($row=mysqli_fetch_array($results)) { ?>
 				<tr>
 					<td><?php echo $row['name']; ?></td>
-					<td><?php echo $row['achieve']; ?></td>
-					<td><?php echo $row['budget']; ?></td>
+					<td><?php echo number_format($row['achieve']); ?></td>
+					<td><?php echo number_format($row['budget']); ?></td>
 					<td>
-						<a href="index.php?edit=<?php echo $row['id']; ?>" class="del_btn">Edit</a>
+					    <?php $phan_tram= $row['achieve']/$row['budget']*100;
+					    echo number_format($phan_tram,2, '.', ' ')." %"; ?>
+					</td>
+					<td>
+						<a href="index.php?edit=<?php echo $row['id']; ?>" class="editt_btn">Edit</a>
 					</td>
 					<td>
 						<a href="delete.php?id=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
@@ -86,7 +91,7 @@
 					<button class="btn" type="submit" name="save" >Save</button>
 				<?php endif ?>
 			</div>
-
+			</div>
 		</form>
 	</div>
 

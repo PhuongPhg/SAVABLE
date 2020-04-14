@@ -10,7 +10,16 @@ body {
   line-height: 100px; /*make the line "o giua"*/
 }
 
-
+#header a{
+  color: #CC8C64;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  vertical-align: top;
+}
+#header a:hover{
+  color: #6E3D38;
+}
 #header-title{
   display: block;
   float: left;
@@ -54,12 +63,23 @@ body {
   color: white;
 }
 
-table{
-  width: 50%;
-  margin: 30px auto;
-  border-collapse: collapse;
-  text-align: left;
+#footer a{
+  color: white;
+  text-decoration: none;
 }
+#footer a:hover{
+  color: #CC8C64;
+}
+
+table{
+    width:100%; 
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse: collapse;
+     text-align: left;
+     table-layout: auto;
+}
+
 tr{
   border-bottom: 1px solid #cbcbcb;
 }
@@ -101,14 +121,22 @@ form{
     padding: 2px 5px;
     color: white;
     border-radius: 3px;
-    background: #6E3D38;
+    background: #68727E;
+}
+
+.editt_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #D5674E;
 }
 
 .btn {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #5F9EA0;
+    background: #D5674E;
     border: none;
     border-radius: 5px;
 }

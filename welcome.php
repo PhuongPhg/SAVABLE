@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 $_SESSION['name']=$_POST['name']
 ?>
 <!DOCTYPE html>
