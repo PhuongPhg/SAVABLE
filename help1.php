@@ -27,9 +27,7 @@ exit;
 
 $row = mysqli_fetch_array($kt);
 
-$_SESSION['name'] = $row['name'];
 $_SESSION['email'] = $_POST['imeo'];
-$_SESSION['username'] = $row['username'];
 
 require("help2.html");
 die();

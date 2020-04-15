@@ -71,7 +71,7 @@ body {
 	background-color: white;
 }
 
-input[type=text]{
+input[type=email]{
 	height: 58px;
 	width: 401px;
 	margin-bottom: 9px;
