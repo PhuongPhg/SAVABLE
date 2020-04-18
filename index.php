@@ -1,4 +1,5 @@
 <?php
+    include("delete.php");
 	include("savedata.php");
 	$user=$_SESSION['username'];
 
@@ -63,7 +64,7 @@
 						<a href="index.php?edit=<?php echo $row['id']; ?>" class="editt_btn">Edit</a>
 					</td>
 					<td>
-						<a href="delete.php?id=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
+						<a href="delete.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
 					</td>
 				</tr>
 				<?php } ?>

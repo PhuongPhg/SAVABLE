@@ -20,15 +20,20 @@ $userr=$_SESSION['username'];
 		exit;
 	}
   if (isset($_POST['update'])) {
-		$id = $_POST['id'];
-		$namee = $_POST['namee'];
-		$achieve = $_POST['achieve'];
-  	$budget=$_POST['budget'];
+	$id = $_POST['id'];
+	$namee = $_POST['namee'];
+	$achieve = $_POST['achieve'];
+  $budget=$_POST['budget'];
 
 	mysqli_query($connect, "UPDATE wishlist SET name='$namee', achieve=$achieve, budget=$budget WHERE id=$id");
 	header('location: index.php');
 	exit;
   }
-
+if (isset($_GET['del'])) {
+	$id = $_GET['del'];
+	mysqli_query($connect, "DELETE FROM wishlist WHERE id=$id AND username='$userr'");
+	header('location: index.php');
+	exit;
 }
+
 ?>
