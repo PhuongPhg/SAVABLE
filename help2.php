@@ -4,6 +4,8 @@ include("connection.php");
 
 session_start();
 
+$useremail = $_SESSION['email'];
+
 header('Content-Type: text/html; charset=UTF-8');
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	include "connection.php";
@@ -27,9 +29,11 @@ if($newpass != $reenpass){
 	exit;
 }
 
-mysqli_query($connect, "UPDATE UserAccount SET password='$newpass' WHERE email=$_SESSION['email']");
-
-require("index.php");
-die();
+mysqli_query($connect, "UPDATE UserAccount SET password='$newpass' WHERE email='$useremail'");
+unset($_SESSION["email"]);
+include('disconnection.php');
+header( "refresh:5; url=login.html" );
+echo 'Please log in with the new password after 5 seconds';
+exit;
 
 ?>
