@@ -39,7 +39,7 @@
 
 	<div id="content">
 	    <div class="container">
-		<?php $results=mysqli_query($connect, "SELECT * FROM wishlist WHERE username='$user'");?>
+		<?php $results=mysqli_query($connect, "SELECT * FROM wishlist WHERE username='$user'order by (achieve/budget*100) DESC");?>
 
 		<table align="center" class="center-table" style="width: 80%">
 			<thead>
