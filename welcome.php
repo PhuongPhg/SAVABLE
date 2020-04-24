@@ -51,7 +51,7 @@ $_SESSION['name']=$_POST['name']
     <div class="container">
       <div class="column">
         <h4>Contact information</h4>
-        <p><a href="">Pham Minh Long</a></p>
+        <p><a href="https://github.com/s0ys4uc3">Pham Minh Long</a></p>
         <p><a href="https://github.com/PhuongPhg">Trinh Thao Phuong</a></p>
       </div>
 
