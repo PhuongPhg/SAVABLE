@@ -21,7 +21,7 @@
 <html>
 <head>
 	<title>Your wish list</title>
-	<link rel="stylesheet" type="text/css" href="indexcreate.css">
+	<link rel="stylesheet" type="text/css" href="../css/indexcreate.css">
 </head>
 <body>
 	<div id="header">

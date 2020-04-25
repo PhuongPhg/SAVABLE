@@ -6,7 +6,7 @@ $_SESSION['name']=$_POST['name']
 
 <head>
   <title>SAVABLE</title>
-  <link rel="stylesheet" type="text/css" href="welcome.css">
+  <link rel="stylesheet" type="text/css" href="../css/welcome.css">
   <style>
     img{
       display: block;
@@ -35,7 +35,7 @@ $_SESSION['name']=$_POST['name']
   <div id="content">
     <div class="ontainer">
       <div class="hovereffect">
-        <img class="img-responsive" src="imgintro.jpg" width="100%" height="100%">
+        <img class="img-responsive" src="../images/imgintro.jpg" width="100%" height="100%">
             <div class="overlay">
               <br>
                 <h2>Achieve your goals</h2>

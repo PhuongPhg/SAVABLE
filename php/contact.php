@@ -5,7 +5,7 @@
 <html>
 <head>
   <title>Contact SAVABLE</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <style>
     img{
       display: block;

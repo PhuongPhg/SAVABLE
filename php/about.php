@@ -5,7 +5,7 @@
 <html>
 <head>
   <title>About SAVABLE</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <style>
     img{
       display: block;
@@ -32,7 +32,7 @@
   </div>
 
   <div id="content">
-    <img src="logo-background.jpg">
+    <img src="../images/logo-background.jpg">
     <div class="about-content">
       <br><br>
         <p><strong>This application help you manage your own money and achieve the goals!</strong></p>
