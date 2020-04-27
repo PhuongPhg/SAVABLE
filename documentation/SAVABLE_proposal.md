@@ -40,3 +40,8 @@ It's the combination between List-to-do and financial spending. After some updat
 When user achieves goal, they will get the points to race with others. The reward will be added to upgrade things in the minigame.
 
 The minigame can be like having your own pet or simply a garden. The game will have some points used for growing pet or raising tree, buy background, buying more pets or buying decoration. The game will not take the user's time and bring peaceful atmosphere because we don't want user focuses too much on the game and they need time to relax and free the mind.
+
+## *4. More details*
+*SRS*: shorturl.at/nprDN
+
+*SDD*: shorturl.at/oqW04
