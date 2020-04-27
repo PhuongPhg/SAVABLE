@@ -36,7 +36,8 @@ exit;
 //Lưu tên đăng nhập
 $_SESSION['name'] = $row['name'];
 $_SESSION['username']=$_POST['user-name'];
-require ("index.php");
+header ('location: index.php');
+exit;
 die();
 
 ?>
