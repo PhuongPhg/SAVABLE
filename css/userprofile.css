@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+body {
+    color: #555;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+#header{
+    background-color: white;
+    height: 100px;
+    line-height: 100px;
+}
+
+#header a{
+    color: #CC8C64;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    vertical-align: top;
+}
+
+#header a:hover{
+    color: #6E3D38;
+}
+
+#header-title{
+    display: block;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#header-nav{
+    display: block;
+    float: right;
+}
+  
+#header-nav li{
+    display: inline;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    background-color: #ECEDEE;
+    border-radius: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#content{
+	display: block;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 	1000px;
+}
+
+#content img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 152px;
+    height: 152px;
+}
+
+#name{
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	color: black;
+}
+
+#inforow{
+    display: block;
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inforow img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 55px;
+    height: 55px;
+}
+
+#user{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+#achieve{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+#progress{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+#userd{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ECEDEE;
+    border-radius: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#achieved{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background-color: #ECEDEE;
+    border-radius: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#progressd{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ECEDEE;
+    border-radius: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#maininfo{
+    display: block;
+    padding-top: 40px;
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+}
+
+#maininfo p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#mainachieve{
+    padding-top: 40px;
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+#mainachieve img{
+    display: inline;
+    width: 24px;
+    height: 24px;
+    margin-left: 0px;
+    margin-right: 24px;
+    border-bottom: 0px;
+}
+
+#mainprogress{
+    display: block;
+    padding-top: 40px;
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: rgb(116, 116, 116);
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+  
+#myBar{
+    width: 75%;
+    height: 30px;
+    background-color: #CC8C64;
+    border-radius: 15px;
+}
