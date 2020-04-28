@@ -38,6 +38,7 @@
 	</div>
 
 	<div id="content">
+	   
 	    <div class="container">
 		<?php $results=mysqli_query($connect, "SELECT * FROM wishlist WHERE username='$user'order by (achieve/budget*100) DESC");?>
 
@@ -75,7 +76,7 @@
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<div class="input-group">
 				<label>Name</label>
-				<input type="text" name="namee" value="<?php echo $namee; ?>">
+				<input type="text" name="namee" value="<?php echo $namee; ?>" required>
 			</div>
 			<div class="input-group">
 				<label>Achieve</label>
@@ -83,7 +84,7 @@
 			</div>
 			<div class="input-group">
 				<label>Budget</label>
-				<input type="number" name="budget" value="<?php echo $budget; ?>">
+				<input type="number" id =" thisBudget" name="budget" value="<?php echo $budget; ?>" min="0.000001" max ="" title="Fill the budget different from 0" required>
 			</div>
 			<div class="input-group">
 				<?php if ($update == true): ?>
@@ -94,6 +95,7 @@
 			</div>
 			</div>
 		</form>
+		
 	</div>
 
 	<div id="footer">
