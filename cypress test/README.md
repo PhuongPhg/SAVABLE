@@ -26,6 +26,6 @@ On the project root, type in command ```npx cypress open```
 
 ## Try our testing files
 
-To try our test, move the files in [cypress folder]([https://github.com/PhuongPhg/SAVABLE/tree/master/cypress%20test](https://github.com/PhuongPhg/SAVABLE/tree/master/cypress test)), paste all those files in `cypress/integration` folder.
+To try our test, move the files in [cypress folder](https://github.com/PhuongPhg/SAVABLE/tree/master/cypress%20test), paste all those files in `cypress/integration` folder.
 
 You don't need to clone our project git because we tested them in the demo website.
