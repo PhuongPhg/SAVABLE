@@ -1,9 +1,9 @@
 describe('Sign up page test',  () => {
     it('Navigate to sign up page', () => {
-        cy.visit('https://letmetryy.000webhostapp.com/signup.html');
+        cy.visit('https://letmetryy.000webhostapp.com/html/signup.html');
     })
     
-    it('Input sign up info', () => {
+    it('Input  invalid information', () => {
         cy.get("form");
 
         cy.get('input[name="user-name"]')
@@ -15,8 +15,8 @@ describe('Sign up page test',  () => {
           .should('have.value', 'Guest');
 
         cy.get('input[name="email"]')
-          .type('randomguest@email.com')
-          .should('have.value', 'randomguest@email.com');
+          .type('randomguest')
+          .should('have.value', 'randomguest');
         
         cy.get('input[name="pass-word"]')
           .type('iamaguest')
