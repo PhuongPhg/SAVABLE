@@ -7,14 +7,16 @@ $name = "";
 $usernamee = "";
 $email = "";
 $passwordd = "";
+$yearofbirth = "";
 $check=0;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST["name"])) { $name = $_POST['name']; }
     if(isset($_POST["user-name"])) { $usernamee = $_POST['user-name']; }
     if(isset($_POST["email"])) { $email = $_POST['email']; }
     if(isset($_POST["pass-word"])) { $passwordd = $_POST['pass-word']; }
+    if(isset($_POST["yob"])) { $yearofbirth = $_POST['yob']; }
 }
-    if($name=="" || $usernamee=="" || $email=="" || $passwordd==""){
+    if($name=="" || $usernamee=="" || $email=="" || $passwordd=="" || $yearofbirth){
       echo "Some information is misssing. Do it again please! <a href='javascript: history.go(-1)'>Return</a>";
       exit;
     }
@@ -27,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       }
       else {
     //Code xử lý, insert dữ liệu vào table
-    $sql = "INSERT INTO UserAccount (name, username, email, password)
-    VALUES ('$name', '$usernamee', '$email', '$passwordd')";
+    $sql = "INSERT INTO UserAccount (name, username, email, password, yob)
+    VALUES ('$name', '$usernamee', '$email', '$passwordd', '$yearofbirth')";
 
     if ($connect->query($sql) === TRUE) {
         echo "";
