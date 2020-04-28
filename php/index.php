@@ -84,7 +84,7 @@
 			</div>
 			<div class="input-group">
 				<label>Budget</label>
-				<input type="number" id =" thisBudget" name="budget" value="<?php echo $budget; ?>" min="0.000001" max ="" title="Fill the budget different from 0" required>
+				<input type="number" id =" thisBudget" name="budget" value="<?php echo $budget; ?>" min="1" title="Fill the budget different from 0" required>
 			</div>
 			<div class="input-group">
 				<?php if ($update == true): ?>
