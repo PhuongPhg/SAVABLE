@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST["pass-word"])) { $passwordd = $_POST['pass-word']; }
     if(isset($_POST["yob"])) { $yearofbirth = $_POST['yob']; }
 }
-    if($name=="" || $usernamee=="" || $email=="" || $passwordd=="" || $yearofbirth){
+    if($name=="" || $usernamee=="" || $email=="" || $passwordd=="" || $yearofbirth==""){
       echo "Some information is misssing. Do it again please! <a href='javascript: history.go(-1)'>Return</a>";
       exit;
     }
