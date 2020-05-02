@@ -1,7 +1,6 @@
 whitebear.jpg 
 connection.php
 node_modules/
-cypress.json
 cypress/
 package-lock.json
 package.json 
