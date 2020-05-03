@@ -27,7 +27,7 @@ Cypress.Commands.add('typeLogIn', (username, pw) => {
     cy.get("form");
 
     cy.get('input[name=user-name]').clear().type(username)
-    cy.get('input[type=password]').clear().type(pw)
+    cy.get('input[type=pass-word]').clear().type(pw)
 
     cy.get("form").submit();
 })
