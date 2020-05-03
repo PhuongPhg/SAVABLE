@@ -39,7 +39,7 @@
     <div id="input-string">
       <form id="inputform" method="POST" action="../php/save.php">
         <div id="username">
-          <input type="text" class="username" placeholder="Username" name="user-name" pattern=".{6,}" title="Six or more characters" required>
+          <input type="text" class="username" placeholder="Username" name="user-name" pattern="[A-Za-z0-9]+.{5,}" title="Six or more characters and no punctuation or special characters" required>
         </div>
         <div id="password">
           <input type="text" class="name" placeholder="Name" name="name" required>
