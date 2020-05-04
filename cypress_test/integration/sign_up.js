@@ -1,67 +1,87 @@
 describe('Sign up page test',  () => {
-    it('Navigate to sign up page', () => {
-        cy.visit('/html/signup.html');
-    })
+  beforeEach(() => {
+    cy.visit('https://letmetryy.000webhostapp.com/html/signup.html')
+  })
     
-    it('Missing username', () => {
-        cy.get("form");
+  it('Missing username', () => {
+    cy.get("form");
 
-        cy.get('input[name="user-name"]').clear()
+    cy.get('input[name="user-name"]').clear();
 
-        cy.get('input[name="name"]')
-          .clear()
-          .type('This is a Fake Name')
-          .should('have.value', 'This is a Fake Name');
+    cy.get('input[name="name"]')
+      .clear()
+      .type('Guest')
+      .should('have.value', 'Guest');
         
-        cy.get('input[name="email"]')
-          .clear()
-          .type('randomguest@gmail.com')
-          .should('have.value', 'randomguest@gmail.com');
-
-        cy.get('input[name="yob"]')
-          .clear()
-          .type('1988')
-          .should('have.value', '1988');
+    cy.get('input[name="yob"]')
+      .clear()
+      .type('1988')
+      .should('have.value', '1988');
         
-        cy.get('input[name="pass-word"]')
-          .clear()
-          .type('Iam@guest1988')
-          .should('have.value', 'Iam@guest1988');
+    cy.get('input[name="email"]')
+      .clear()
+      .type('randomguest@gmail.com')
+      .should('have.value', 'randomguest@gmail.com');
         
-        cy.get("form").submit();
-        cy.contains('Missing username. Check it again!')
-        cy.contains('Return').click()
-    })
+    cy.get('input[name="pass-word"]')
+      .clear()
+      .type('Iam@guest1988')
+      .should('have.value', 'Iam@guest1988');
+        
+    cy.get("form").submit();
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
+  })
 
-    it('Missing name', () => {
-      cy.get("form");
+  it('Missing name', () => {
+    cy.get("form");
 
-      cy.get('input[name="user-name"]')
-        .clear()
-        .type('randomguest')
-        .should('have.value', 'randomguest');
+    cy.get('input[name="user-name"]')
+      .clear()
+      .type('randomguest')
+      .should('have.value', 'randomguest');
 
-      cy.get('input[name="name"]').clear()
+    cy.get('input[name="name"]').clear();
       
-      cy.get('input[name="email"]')
-        .clear()
-        .type('randomguest@gmail.com')
-        .should('have.value', 'randomguest@gmail.com');
+    cy.get('input[name="yob"]')
+      .clear()
+      .type('1988')
+      .should('have.value', '1988');
       
-      cy.get('input[name="yob"]')
-        .clear()
-        .type('1988')
-        .should('have.value', '1988');
+    cy.get('input[name="email"]')
+      .clear()
+      .type('randomguest@gmail.com')
+      .should('have.value', 'randomguest@gmail.com');
       
-      cy.get('input[name="pass-word"]')
-        .clear()
-        .type('Iam@guest1988')
-        .should('have.value', 'Iam@guest1988');
+    cy.get('input[name="pass-word"]')
+      .clear()
+      .type('Iam@guest1988')
+      .should('have.value', 'Iam@guest1988');
       
-      cy.get("form").submit();
-      cy.contains('Missing name. Check it again!')
-      cy.contains('Return').click()
-    })
+    cy.get("form").submit();
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
+  })
 
     it('Missing yob', () => {
       cy.get("form");
@@ -73,10 +93,10 @@ describe('Sign up page test',  () => {
   
       cy.get('input[name="name"]')
         .clear()
-        .type('This is a Fake Name')
-        .should('have.value', 'This is a Fake Name');
+        .type('Guest')
+        .should('have.value', 'Guest');
          
-      cy.get('input[name="yob"]').clear()
+      cy.get('input[name="yob"]').clear();
         
       cy.get('input[name="email"]')
         .clear()
@@ -89,8 +109,18 @@ describe('Sign up page test',  () => {
         .should('have.value', 'Iam@guest1988');
         
       cy.get("form").submit();
-      cy.contains('Missing year of birth. Check it again!')
-      cy.contains('Return').click()
+      
+      var currentURL = null;
+      cy.url().then(url => {
+        currentURL = url;
+        if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+          cy.log('Passing');
+        } 
+        else{
+          cy.log('Not passing');
+          return 0;
+        }
+      });
   })
 
   it('Missing email', () => {
@@ -103,15 +133,15 @@ describe('Sign up page test',  () => {
 
     cy.get('input[name="name"]')
       .clear()
-      .type('This is a Fake Name')
-      .should('have.value', 'This is a Fake Name');
+      .type('Guest')
+      .should('have.value', 'Guest');
        
     cy.get('input[name="yob"]')
       .clear()
       .type('1988')
       .should('have.value', '1988');
       
-    cy.get('input[name="email"]').clear() 
+    cy.get('input[name="email"]').clear();
       
     cy.get('input[name="pass-word"]')
       .clear()
@@ -119,8 +149,18 @@ describe('Sign up page test',  () => {
       .should('have.value', 'Iam@guest1988');
       
     cy.get("form").submit();
-    cy.contains('Missing email. Check it again!')
-    cy.contains('Return').click()
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
   })
   
   it('Missing password', () => {
@@ -133,8 +173,8 @@ describe('Sign up page test',  () => {
 
     cy.get('input[name="name"]')
       .clear()
-      .type('This is a Fake Name')
-      .should('have.value', 'This is a Fake Name');
+      .type('Guest')
+      .should('have.value', 'Guest');
        
     cy.get('input[name="yob"]')
       .clear()
@@ -146,11 +186,21 @@ describe('Sign up page test',  () => {
       .type('randomguest@gmail.com')
       .should('have.value', 'randomguest@gmail.com'); 
       
-    cy.get('input[name="pass-word"]').clear()
+    cy.get('input[name="pass-word"]').clear();
       
     cy.get("form").submit();
-    cy.contains('Missing password. Check it again!')
-    cy.contains('Return').click()
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
   })
 
   it('Email taken', () => {
@@ -163,8 +213,8 @@ describe('Sign up page test',  () => {
 
     cy.get('input[name="name"]')
       .clear()
-      .type('This is a Fake Name')
-      .should('have.value', 'This is a Fake Name');
+      .type('Guest')
+      .should('have.value', 'Guest');
        
     cy.get('input[name="yob"]')
       .clear()
@@ -182,8 +232,18 @@ describe('Sign up page test',  () => {
       .should('have.value', 'Iam@guest1988');
       
     cy.get("form").submit();
-    cy.contains('This email address had been taken. Check it again!')
-    cy.contains('Return').click()
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
   })
 
   it('Username taken', () => {
@@ -196,8 +256,8 @@ describe('Sign up page test',  () => {
 
     cy.get('input[name="name"]')
       .clear()
-      .type('This is a Fake Name')
-      .should('have.value', 'This is a Fake Name');
+      .type('Guest')
+      .should('have.value', 'Guest');
        
     cy.get('input[name="yob"]')
       .clear()
@@ -215,8 +275,18 @@ describe('Sign up page test',  () => {
       .should('have.value', 'Iam@guest1988');
       
     cy.get("form").submit();
-    cy.contains('This username had been taken. Check it again!')
-    cy.contains('Return').click()
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
   })
 
   it('Invalid username', () => {
@@ -229,8 +299,8 @@ describe('Sign up page test',  () => {
 
     cy.get('input[name="name"]')
       .clear()
-      .type('This is a Fake Name')
-      .should('have.value', 'This is a Fake Name');
+      .type('Guest')
+      .should('have.value', 'Guest');
        
     cy.get('input[name="yob"]')
       .clear()
@@ -248,7 +318,76 @@ describe('Sign up page test',  () => {
       .should('have.value', 'Iam@guest1988');
       
     cy.get("form").submit();
-    cy.contains('Invalid username. Check it again!')
-    cy.contains('Return').click()
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
+  })
+
+  it('Invalid year of birth', () => {
+    cy.get("form");
+
+    cy.get('input[name="user-name"]')
+      .clear()
+      .type('randomguest')
+      .should('have.value', 'randomguest');
+
+    cy.get('input[name="name"]')
+      .clear()
+      .type('Guest')
+      .should('have.value', 'Guest');
+       
+    cy.get('input[name="yob"]')
+      .clear()
+      .type('4098')
+      .should('have.value', '4098');
+      
+    cy.get('input[name="email"]')
+      .clear()
+      .type('randomguest@gmail.com')
+      .should('have.value', 'randomguest@gmail.com'); 
+      
+    cy.get('input[name="pass-word"]')
+      .clear()
+      .type('Iam@guest1988')
+      .should('have.value', 'Iam@guest1988');
+      
+    cy.get("form").submit();
+    
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
+  })
+
+  it('Valid user information', () => {
+    cy.typeSignUp('randomguest', 'Guest', '1988', 'randomguest@gmail.com', 'Iam@guest1988');
+
+    var currentURL = null;
+    cy.url().then(url => {
+      currentURL = url;
+      if(currentURL=='https://letmetryy.000webhostapp.com/php/save.php'){
+        cy.log('Passing');
+      } 
+      else{
+        cy.log('Not passing');
+        return 0;
+      }
+    });
   })
 })
