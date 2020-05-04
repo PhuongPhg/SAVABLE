@@ -45,7 +45,7 @@
           <input type="text" class="name" placeholder="Name" name="name" required>
         </div>
         <div id="yearofbirth">
-          <input type="number" class="yob" placeholder="Year of birth" name="yob" required>
+          <input type="number" class="yob" placeholder="Year of birth" name="yob" min="1900" max="2020" title="Year of birth must be between 1900 and 2020" required>
         </div>
         <div id="email">
           <input type="email" class="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
