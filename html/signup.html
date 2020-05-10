@@ -39,13 +39,13 @@
     <div id="input-string">
       <form id="inputform" method="POST" action="../php/save.php">
         <div id="username">
-          <input type="text" class="username" placeholder="Username" name="user-name" pattern="[A-Za-z0-9]+.{5,}" title="Six or more characters and no punctuation or special characters" required>
+          <input type="text" class="username" placeholder="Username" name="user-name" pattern="[A-Za-z0-9_]{5,}" title="Only letters, numbers and the underscore" required>
         </div>
         <div id="password">
           <input type="text" class="name" placeholder="Name" name="name" required>
         </div>
         <div id="yearofbirth">
-          <input type="number" class="yob" placeholder="Year of birth" name="yob" min="1900" max="2020" title="Year of birth must be between 1900 and 2020" required>
+          <input type="number" class="yob" placeholder="Year of birth" name="yob" required>
         </div>
         <div id="email">
           <input type="email" class="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
