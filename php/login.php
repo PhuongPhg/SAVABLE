@@ -19,7 +19,7 @@ if($usernamee=="" || $passwordd=="") {
   exit;
 }
 //Kiểm tra tên đăng nhập có tồn tại không
-$sql=("SELECT username, name, password FROM UserAccount WHERE username='$usernamee'");
+$sql=("SELECT username, name, password, email, yob FROM UserAccount WHERE username='$usernamee'");
 $kt=mysqli_query($connect, $sql);
 if (mysqli_num_rows($kt) == 0) {
 echo "This username does not exist. Check it again! <a href='javascript: history.go(-1)'>Return</a>";
@@ -36,6 +36,8 @@ exit;
 //Lưu tên đăng nhập
 $_SESSION['name'] = $row['name'];
 $_SESSION['username']=$_POST['user-name'];
+$_SESSION['yearofbirth'] = $row['yob']
+$_SESSION['email'] = $row['email']
 header ('location: index.php');
 exit;
 die();

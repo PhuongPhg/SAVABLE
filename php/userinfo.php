@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +16,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li>Hi Name</li>
+                    <li>Hi <?php echo $_SESSION['name'] ?></li>
                     <li><a href="logout.php">Log out</a></li>
                 </ul>
             </div>
@@ -24,7 +28,7 @@
             </div>
             
             <div id="name">
-              <p>Full Name</p>
+              <p><?php echo $_SESSION['name'] ?></p>
             </div>
 
             <div id="inforow">
@@ -32,22 +36,22 @@
                     <img src="../images/identity.svg">
                     Information
                 </div>
-                <div id="achieve" onclick="location.href='userachieve.html';" style="cursor: pointer;">
+                <div id="achieve" onclick="location.href='userachieve.php';" style="cursor: pointer;">
                     <img src="../images/achieve.svg">
                     Achievement
                 </div>
-                <div id="progress" onclick="location.href='userprogress.html';" style="cursor: pointer;">
+                <div id="progress" onclick="location.href='userprogress.php';" style="cursor: pointer;">
                     <img src="../images/notes.svg">
                     Progress
                 </div>
             </div>
 
             <div id="maininfo">
-                <p><b>Username: </b>yuugudorasiru</p>
+                <p><b>Username: </b><?php echo $_SESSION["username"] ?></p>
                 <br>
-                <p><b>Year of birth: </b>2000</p>
+                <p><b>Year of birth: </b><?php echo $_SESSION["yearofbirth"] ?></p>
                 <br>
-                <p><b>Email: </b>axx@gmail.com</p>
+                <p><b>Email: </b><?php echo $_SESSION["email"] ?></p>
                 <br>
                 <p><b>Status: </b>Activated</p>
             </div>

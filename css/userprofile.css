@@ -183,15 +183,21 @@ body {
 
 #myProgress {
     width: 100%;
-    background-color: rgb(116, 116, 116);
+    background-color: #dddddd;
     text-align: center;
     color: white;
     border-radius: 15px;
 }
   
 #myBar{
-    width: 75%;
     height: 30px;
     background-color: #CC8C64;
     border-radius: 15px;
+}
+
+#achievetext{
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+    color: #CC8C64;
 }

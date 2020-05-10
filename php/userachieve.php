@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +16,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li>Hi LUL</li>
+                    <li>Hi <?php echo $_SESSION["name"] ?></li>
                     <li><a href="logout.php">Log out</a></li>
                 </ul>
             </div>
@@ -24,31 +28,26 @@
             </div>
             
             <div id="name">
-              <p>Full Name</p>
+              <p><?php echo $_SESSION["name"] ?></p>
             </div>
 
             <div id="inforow">
-                <div id="user" onclick="location.href='userinfo.html';" style="cursor: pointer;">
+                <div id="user" onclick="location.href='userinfo.php';" style="cursor: pointer;">
                     <img src="../images/identity.svg">
                     Information
                 </div>
-                <div id="achieve" onclick="location.href='userachieve.html';" style="cursor: pointer;">
+                <div id="achieved">
                     <img src="../images/achieve.svg">
                     Achievement
                 </div>
-                <div id="progressd">
+                <div id="progress" onclick="location.href='userprogress.php';" style="cursor: pointer;">
                     <img src="../images/notes.svg">
                     Progress
                 </div>
             </div>
 
-            <div id="mainprogress">
-                <p><b>To-do: </b>5 items</p>
-                <p><b>Total saved: </b>7,500,000 VND</p>
-                <p><b>Total target: </b>10,000,000 VND</p>
-                <div id="myProgress">
-                    <div id="myBar">75%</div>
-                </div>
+            <div id="mainachieve">
+                <p><img src="../images/done.svg">Newbie!</p>
             </div>
         </div>
     </body>

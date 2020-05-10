@@ -25,7 +25,7 @@
         <li><a href="index.php">Home</a></li>
         <li> <a href="about.php">About</a> </li>
         <li>Contact</li>
-        <li>Hi <?php echo $_SESSION["name"] ?></li>
+        <li><a href="userinfo.php">Hi <?php echo $_SESSION["name"] ?></a></li>
         <li><a href="logout.php">Log out</a></li>
       </ul>
     </div>

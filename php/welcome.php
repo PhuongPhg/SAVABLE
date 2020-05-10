@@ -26,14 +26,14 @@ $_SESSION['name']=$_POST['name']
         <li><a href="">Home</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="contact.php">Contact</a></li>
-        <li>Hi <?php echo $_SESSION['name'] ?></li>
+        <li><a href="userinfo.php">Hi <?php echo $_SESSION["name"] ?></a></li>
         <li><a href="logout.php">Log out</a></li>
       </ul>
     </div>
   </div>
 
   <div id="content">
-    <div class="ontainer">
+    <div class="container">
       <div class="hovereffect">
         <img class="img-responsive" src="../images/imgintro.jpg" width="100%" height="100%">
             <div class="overlay">
