@@ -33,4 +33,8 @@ To try our test
 
 You don't need to clone our project git because we tested them in the demo website (except the log_in.js)
 
-For some files like log_in.js, replace the link inside `cy.visit()` with the website link.
+**Note**: 
+
+- For some files like log_in.js, replace the link inside `cy.visit()` with the website link.
+
+- If you want to test SAVABLE on XAMPP, you can update the baseURL in 'cypress.json' or change your Apache Listen Port Number to 8080
