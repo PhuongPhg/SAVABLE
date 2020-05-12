@@ -17,8 +17,8 @@ The [user manual]() is still updating.
 ## Information about the website
 
 - [Proposal](https://github.com/PhuongPhg/SAVABLE/blob/master/documentation/SAVABLE_proposal.md) - a short view of what SAVABLE is
-- [SRS](shorturl.at/nprDN) -  a short brief description of a software system
-- [SDD](shorturl.at/oqW04) - a description of a software product
+- [SRS](https://docs.google.com/document/d/1zf976bpD4C5w2o4mSwA80lXLF4GebSvy0ZG3kErm2Rs/edit?usp=sharing) -  a short brief description of a software system
+- [SDD](https://docs.google.com/document/d/1QcThsMjnPbZoZCToEqPaTirzLAZTRvSbJgzELCZyZHA/edit?usp=sharing) - a description of a software product
 
 ## Authors
 
