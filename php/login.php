@@ -36,8 +36,8 @@ exit;
 //Lưu tên đăng nhập
 $_SESSION['name'] = $row['name'];
 $_SESSION['username']=$_POST['user-name'];
-$_SESSION['yearofbirth'] = $row['yob']
-$_SESSION['email'] = $row['email']
+$_SESSION['yearofbirth'] = $row['yob'];
+$_SESSION['email'] = $row['email'];
 header ('location: index.php');
 exit;
 die();
