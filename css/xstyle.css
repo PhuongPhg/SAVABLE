@@ -195,7 +195,6 @@ input[type="image"] {
 #go{
 	margin-top: 200px;
 	float: right;
-
 }
 #go button{
   border-radius: 50%;
@@ -205,6 +204,7 @@ input[type="image"] {
   position: absolute;
   float: right;
   border: none;
+
 }
 
 #go2{
@@ -220,4 +220,72 @@ input[type="image"] {
   position: absolute;
   float: right;
   border: none;
+}
+
+#go button{
+  border-radius: 100%;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  /* position: relative; */
+  /* width: 40px;
+  height: 28px; */
+  margin: 0 2px;
+  padding-top: 12px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  background-color: transparent;
+  
+}
+
+#go button.login_box:before {
+  color: #fff;
+  font-size: 20px;
+}
+button span {
+  background: #fff;
+  color: #222;
+  font-size: 19px;
+  font-weight: bold;
+  position:  absolute;
+  bottom: 0;
+  left: -40px;
+  right: -80px;
+  padding: 5px 5px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+  font-family: "Poppins", sans-serif;
+}
+button span:before {
+  content: '';
+/*   width: 0;
+  height: 0; */
+  border-left: 10px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 40px;
+}
+
+button:hover span {
+  bottom: 30px;
+  visibility: visible;
+  opacity: 1;
+}
+button.login_box:hover {
+  background-color:transparent; 
+  color: #6E3D38;
+  
+}
+button.login_box span {
+  color: white;
+  background-color: #6E3D38;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+  margin-left: 5px;
 }
