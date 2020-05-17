@@ -48,6 +48,17 @@ body {
     text-transform: uppercase;
 }
 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + #content {
+    padding-top: 102px;
+}
+
 .container{
     max-width: 1000px;
     margin: 0 auto;
