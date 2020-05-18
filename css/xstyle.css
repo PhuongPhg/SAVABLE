@@ -20,6 +20,16 @@ body {
 #header a:hover{
   color: #6E3D38;
 }
+/* sticky header */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #content {
+  padding-top: 102px;
+}
 
 #header-title{
   display: block;
