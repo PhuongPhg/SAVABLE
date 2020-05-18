@@ -162,7 +162,7 @@ input[type="image"] {
   position: absolute;
   vertical-align: top;
 }
-#help p{
+/* #help p{
   float: left;
   padding: 5px 5px 5px 5px;
   position: absolute;
@@ -172,13 +172,13 @@ input[type="image"] {
   bottom: auto;
   transition: background-color 1s;
   color: white;
-}
-#help p:hover{
+} */
+/* #help p:hover{
   opacity: 1;
   background-color: #3A3A3A;
   border-radius: 20px;
   transform: translate(75px, -5px);
-}
+} */
 #help:hover{
   opacity: 1;
 }
@@ -226,7 +226,6 @@ input[type="image"] {
   -moz-transition: all .5s;
   transition: all .5s;
   background-color: transparent;
-  
 }
 
 #go button.login_box:before {
@@ -237,11 +236,11 @@ button span {
   background: #fff;
   color: #222;
   font-size: 19px;
-  font-weight: bold;
   position:  absolute;
   bottom: 0;
   left: -40px;
   right: -80px;
+  
   padding: 5px 5px;
   visibility: hidden;
   opacity: 0;
@@ -264,6 +263,7 @@ button span:before {
 
 button:hover span {
   bottom: 30px;
+  /* right: 130px; */
   visibility: visible;
   opacity: 1;
 }
@@ -278,4 +278,45 @@ button.login_box span {
   padding: 5px 5px 5px 5px;
   border-radius: 20px;
   margin-left: 5px;
+}
+
+#help button{
+  border-radius: 50%;
+  width:26px;
+  height:26px;
+  text-decoration: none;
+  position: absolute;
+  float: right;
+
+  border-radius: 100%;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  /* position: relative; */
+  /* width: 40px;
+  height: 28px; */
+  margin: 0 2px;
+  padding-top: 12px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  background-color: transparent;
+}
+
+#help button.forgot:hover {
+  background-color:transparent; 
+  color: #6E3D38;
+  
+}
+#help button.forgot span {
+  color: white;
+  background-color: #6E3D38;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+  margin-left: 5px;
+  left: -55px;
+  right: -105px;
+}
+#help i:hover{
+  color: #6E3D38;
 }
